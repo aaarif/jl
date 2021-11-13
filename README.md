@@ -11,3 +11,8 @@ The backend will have following functionalities
 ## Running on local machine
 The application is built with Django framework version 3.1.2
 * Make sure Python and Django is installed
+* Pull this repository, choose branch master
+* Go to project directory /api 
+```
+cd api
+```
