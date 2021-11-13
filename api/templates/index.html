@@ -1,0 +1,19 @@
+<h1> Hey, This is a technical exercise for software engineering candidates.</h1>
+<p> API backend service, for managing a simple mini wallet. <br>
+- Initialize my account for wallet <br>
+- Enable Wallet  <br>
+- View My Wallet balance  <br>
+- Add virtual money to my wallet  <br>
+- Use virtual money from my wallet  <br>
+- Disable wallet  <br>  
+</p>
+<h2> Enter Customer name  </h2>
+<form method="POST" action="register">
+ {% csrf_token %} 
+<textarea name="words" rows="2" cols="25"> </textarea> <br>
+<input type="submit"/> 
+</form>
+
+<form method="GET" action="register">
+<input value="Refresh" type="submit"/> 
+</form>

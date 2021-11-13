@@ -1,0 +1,17 @@
+<h1> You have created customer. </h1> 
+<p> Let's start Initializing </p>
+<form action="init" method='POST'> 
+ {% comment %} {% csrf_token %}  {% endcomment %}
+<p>Customer xid:</p>
+<input type="text" id="cust_id_id" name="customer_xid"><br>
+<input name="customer_id" value="Initialize"  type="submit"/>
+</form>
+
+
+<form action="wallet" method='POST'> 
+<p> Then enabling. Don't do enabling before initializing </p>
+ {% comment %} {% csrf_token %}  {% endcomment %}
+ <p>Authorization Token, Use sample token:</p>
+ <input type="text" id="token_id" name="token"><br>
+<input value="Enable Wallet"  type="submit"/>
+</form>
