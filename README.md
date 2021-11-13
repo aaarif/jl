@@ -1,12 +1,4 @@
 # BACKEND for MINI WALLET
-The backend will have following functionalities
-
-- Initialize my account for wallet
-- Enable Wallet
-- View My Wallet balance
-- Add virtual money to my wallet
-- Use virtual money from my wallet
-- Disable wallet
 
 ## Running on local machine
 The application is built with Django framework version 3.1.2
@@ -42,10 +34,13 @@ Starting development server at http://127.0.0.1:8000/
 ```
 Home › Myapp › Customers › Customer object (6ecb8243-79cb-46fb-9969-bf1729c2567c)
 ```
-* We need postman to test. Starting with  **Initialize my account for wallet** , use the customer id as form-data in request body. Each end point serves for each purpose. Refer to documentation for request payload
+* We need postman to test. Each end point serves for each purpose. Refer to documentation for request payload
+
+**Initialize my account for wallet**  , use the customer id as form-data in request body.
 ```
 POST http://127.0.0.1:8000/api/v1/init
 ```
+
 **Enable Wallet**
 ```
 POST http://127.0.0.1:8000/api/v1/wallet
