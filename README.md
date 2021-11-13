@@ -42,3 +42,31 @@ Starting development server at http://127.0.0.1:8000/
 ```
 Home › Myapp › Customers › Customer object (6ecb8243-79cb-46fb-9969-bf1729c2567c)
 ```
+* We need postman to test. Starting with  **Initialize my account for wallet** , use the customer id as form-data in request body. Each end point serves for each purpose. Refer to documentation for request payload
+```
+POST http://127.0.0.1:8000/api/v1/init
+```
+**Enable Wallet**
+```
+POST http://127.0.0.1:8000/api/v1/wallet
+```
+
+**View My Wallet balance**
+```
+GET http://127.0.0.1:8000/api/v1/wallet
+```
+
+**Add virtual money to my wallet**
+```
+POST http://127.0.0.1:8000/api/v1/wallet/deposits
+```
+
+**Use virtual money from my wallet**
+```
+POST http://127.0.0.1:8000/api/v1/wallet/withdrawals
+```
+
+**Disable wallet**
+```
+PATCH http://127.0.0.1:8000/api/v1/wallet
+```
